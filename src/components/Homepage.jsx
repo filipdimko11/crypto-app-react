@@ -14,7 +14,7 @@ const Homepage = () => {
 
   if(isFetching) return "Loading ... ";
 
-  console.log(globalStats)
+  // console.log(globalStats)
   return (
     <>
     <Title level={2} className="heading">Global crypto stats</Title>
@@ -49,10 +49,10 @@ const Homepage = () => {
         Latest crypto news
       </Title>
       <Title level={3} className="home-title">
-        <Link to="/news">Show more</Link> 
+        <Link to="/news" simplified={false}>Show more</Link> 
       </Title>
     </div>
-    <News/>
+    <News simplified={true}/>
     </>
   )
 }
